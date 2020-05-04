@@ -12,7 +12,7 @@
 
     window.addEventListener('message', function(e) {
         pushEvent({isTop: isTop(), isMessage:true, origin: e.origin, to: window.location.href, data: (typeof e.data == 'string'? e.data:'[object] '+JSON.stringify(e.data))});
-        // console.log('%c[iframe-broker] %c' + e.origin + ' => ' + window.location.href + ' %c' + (typeof e.data == 'string'? e.data:'[object] '+JSON.stringify(e.data)), 'color:red','',"color: green");
+        console.log('%c[iframe-broker] %c' + e.origin + ' => ' + window.location.href + ' %c' + (typeof e.data == 'string'? e.data:'[object] '+JSON.stringify(e.data)), 'color:red','',"color: green");
     });
 
     window.addEventListener('load', (event) => {
