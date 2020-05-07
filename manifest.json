@@ -35,6 +35,5 @@
     "permissions": [
         "tabs",
         "<all_urls>"
-    ],
-    "devtools_page": "devtools.html"
+    ]
 }

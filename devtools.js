@@ -1,1 +1,0 @@
-chrome.devtools.panels.create("Iframe Broker", '', "panel.html");
