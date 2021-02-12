@@ -1,7 +1,7 @@
 {
     "name": "Iframe Broker",
     "description": "Extension to log iframe and cross window communications.",
-    "version": "1.0",
+    "version": "1.0.1",
     "author": "Vinoth Kumar",
     "manifest_version": 2,
     "background": {
@@ -12,23 +12,23 @@
     "content_security_policy": "script-src 'self'; object-src 'self'",
     "content_scripts": [{
         "all_frames": true,
-        "js": [ "start.js" ],
+        "js": [ "content_script.js" ],
         "matches": [ "<all_urls>" ],
         "run_at": "document_start"
     }],
     "web_accessible_resources": ["script.js"],
     "icons": { 
-        "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
     },
     "browser_action": {
         "default_popup": "popup.html",
         "default_icon": {
-          "16": "icon16.png",
-          "32": "icon32.png",
-          "48": "icon48.png",
-          "128": "icon128.png"
+          "16": "icons/icon16.png",
+          "32": "icons/icon32.png",
+          "48": "icons/icon48.png",
+          "128": "icons/icon128.png"
         },
         "default_title": "Iframe Broker"
     },

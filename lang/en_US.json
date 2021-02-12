@@ -1,0 +1,8 @@
+{
+    "oops": "Oops!",
+    "no_messages": "There are no cross window/iframe messages for this Window",
+    "no_messages_title": "No messages",
+    "from": "Sender",
+    "to": "Receiver",
+    "message": "Message"
+}
